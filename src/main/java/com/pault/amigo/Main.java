@@ -1,9 +1,16 @@
 package com.pault.amigo;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import lombok.extern.java.Log;
+
+import java.util.Locale;
+
+@Log
 public class Main {
     public static void main(String[] args) {
+
+        UseAbstractExample useAbstractExample = new UseAbstractExample("Paul");
+        log.info(useAbstractExample.addSuffix(Locale.getDefault()));
+        AbstractExample.process();
 
     }
 }
